@@ -20,7 +20,7 @@ def cam():
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades +'haarcascade_frontalface_default.xml')
     eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades +'haarcascade_eye.xml')
     smile_cascade = cv2.CascadeClassifier(cv2.data.haarcascades +'haarcascade_smile.xml')
-    hand_cascade = cv2.CascadeClassifier('D:\\University\\Interface\\Code\\cv2\\data\\haarcascades\\fist.xml')
+    hand_cascade = cv2.CascadeClassifier('cv2\\data\\haarcascades\\fist.xml')
 
     #SETS COLOURS to be used by different elements of the UI
     RED = (0, 0, 255)
@@ -55,6 +55,7 @@ def cam():
     def detect(gray, frame):
 
         guess = 0
+
 
         #Sets the colour of the box
         boxCol = WHITE
